@@ -1,0 +1,600 @@
+*{
+    font-family: 'Signika', sans-serif;
+    scroll-behavior: smooth;
+}
+.container{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.bgc-black{
+    background-color: rgba(0, 0, 0, 0.88);
+    transition: 0.5s all;
+}
+
+/* ====subHead Stars==== */
+.subHead{
+    background-color: rgba(0, 0, 0, 0.88);
+    position: absolute;
+    color: white;
+    z-index: 12;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0px;
+    top: 0;
+}
+.subHead p{
+    padding: 5px 0px;
+}
+.subHead a{
+    color: white;
+    margin-left: 10px;
+    text-decoration: underline;
+}
+/* ================subHead Ends======== */
+
+/* ============Header Starts================ */
+
+
+.header{
+    position: absolute;
+    top: 54px;
+    z-index: 555;
+    width: 100%;
+    margin: 0px auto;
+    transition: all 0.5s;
+}
+.header-fixed{
+    position: absolute;
+    top: 54px;
+    z-index: 555;
+    width: 100%;
+    margin: 0px auto;
+    transition: all 0.5s;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.88);
+    top: 0;
+}
+.head{
+    display: flex;
+    justify-content: space-between;
+    background-color: transparent;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+}
+.logo img{
+    width: 240px;
+    align-items: center;
+    margin: 20px 0px;
+}
+.navItems .mainItems{
+    list-style-type: none;
+    display:flex;
+    margin: 0px;
+    padding: 0px;
+}
+.navItems .mainItems li{
+    padding: 5px 20px;
+    margin: 25px 0px;
+}
+.navItems .mainItems li a{
+    margin: auto 0px;
+    font-size: 20px;
+    color: rgb(241, 234, 234);
+}
+.dropdownItem{
+    position: relative;
+}
+.dropdownMenu{
+    position: absolute;
+    padding: 0px;
+    margin: 0px;
+    display: block;
+    list-style-type: none;
+    top: 100%;
+    left: 0%;
+    display: none;
+}
+.dropdownItem:hover .dropdownMenu{
+    display: block;
+}
+.dropdownMenu li{
+    padding: 5px 20px !important;
+    margin: 5px 0px !important;
+}
+.dropdownMenu li a{
+    margin: 0px auto;
+}
+.navItems ul li a:hover{
+    text-decoration: none;
+    color: yellow;
+}
+
+.btns{
+    display: flex;
+    justify-content: space-between;
+}
+.btns button{
+    background-color: transparent;
+    border: none;
+    margin: 25px 0px;
+    padding: 5px 10px;
+}
+.btns button a{
+    color: #f5d356;
+    transition: 1s;
+}
+.btns button a i{
+    color: #f5d356;
+    height: 100%;
+}
+#theme i{
+    font-size: 22px;
+}
+.btns button a:hover{
+    color: rgb(252, 251, 208);
+    text-decoration: none;
+}
+.bar{
+    display: none;
+    cursor: pointer;
+}
+.hidden-items{
+    display: none;
+}
+/* =================Head Ends==================== */
+/* ====================Main section Starts============= */
+.container-vid{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+}
+.container-vid video{
+    object-fit: cover;
+    width: 100%;
+    position: relative;
+    height: 100%;
+}
+.landingParagraph{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.landingParagraph h1{
+    color: white;
+    font-size: 50px;
+    padding: 10px 0px;
+}
+.landingParagraph h1 span{
+    color: #a2d7fb;
+}
+.landingParagraph p{
+    color: white;
+}
+/* =========================Main section ends===================== */
+/* ==========================Second section starts ============== */
+.mostPopular{
+    background-color: #f1f1f1e8;
+    position: relative;
+}
+.btn-up{
+    position: fixed;
+    transition: all 5s;
+    display: none;
+    top: 80%;
+    cursor: pointer;
+    z-index: 999999999999;
+    right:4%;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: black;
+    overflow: hidden;
+    animation-name: up-down;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+.btn-up button{
+    border: none;
+    color: #f5d356;
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+}
+@keyframes up-down{
+    25%{
+        transform: translatey(-10px);
+    }
+    50%{
+        transform: translatey(10px);
+    }    
+    75%{
+        transform: translatey(-10px);
+    }
+    100%{
+        transform: translatey(10px);
+    }
+
+}
+.country-card{
+    border: rgba(0, 0, 0, 0.589) solid 1px;
+    height: 532px;
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
+    transition: ease-in 0.3s;
+}
+.country-card:hover{
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+    transform: scale(1.01,1.01);
+}
+
+.country-body{
+    padding: 20px;
+    text-align: left;
+    
+}
+/* ============================second section ends========== */
+/* =======================third sections starts ============== */
+.upcoming-tours{
+    padding: 80px 0px;
+}
+.container-img{
+    width: 100%;
+}
+.bgc-img{
+    overflow: hidden;
+    position: relative;
+}
+.container-img img{
+    width: 100%;
+    height: auto;
+}
+.about{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.about p{
+    font-family: 'Satisfy', cursive;
+    font-size: 62px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 50px;
+}
+.about a{
+    font-size: 18px;
+    border: 1px solid white;
+    background-color: transparent;
+    padding: 10px 30px;
+    color: white;
+    transition: ease-out 1s;
+}
+.about a:hover{
+    background-color: rgba(255, 255, 255, 0.144);
+    text-decoration: none;
+}
+.layer-bg{
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    position: absolute;
+    background-color: black;
+}
+/* ========================Third section ends=================== */
+/* Four sections starts===================================== */
+.tours{
+    padding: 20px 0px;
+    padding-bottom:80px ;
+}
+.tours table{
+    width: 100%;
+}
+.flag{
+    width: 35px;
+    padding-right: 10px;
+}
+th{
+    border-top: 1px solid #d2d2d3;
+}
+th,td{
+    border-bottom: 1px solid #d2d2d3;
+    padding: 20px 0px;
+}
+td i{
+    color: #f5d356;
+}
+
+/* ==========================Fourth section Ends======================= */
+
+
+/* ==========================Footer================= */
+footer{
+    overflow: hidden;
+    background-color: black;
+    padding: 10px 0px;
+}
+footer p{
+    margin:0px;
+    color: rgba(255, 255, 255, 0.849);
+}
+footer span a{
+    text-decoration: none;
+    color: #f5d356;
+    transition: all 0.2s;
+}
+footer span a:hover{
+    text-decoration: none;
+    color: #a2d7fb;
+}
+/* ==========================Footer Ends================= */
+
+
+
+/* ---------NavbarClassesResponsive----------- */
+.mainItems-r{
+    list-style-type: none;
+    display: block !important;
+    margin: 0px;
+    padding: 40px 0px !important;
+}
+.dropdownMenu-r{
+    left: 100% !important;
+    top: 0% !important;
+}
+/* ---------NavbarClassesResponsive----------- */
+
+/* Responsive */
+
+@media (max-width:1536px){
+
+    .landingParagraph h1 {
+        color: white;
+        font-size: 40px;
+        padding: 10px 0px;
+    }
+    .landingParagraph {
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+    }
+    
+}
+@media (max-width:1280px){
+    .landingParagraph h1 {
+        color: white;
+        font-size: 32px;
+        padding: 10px 0px;
+    }
+    .navItems .mainItems li a {
+        margin: auto 0px;
+        font-size: 16px;
+        color: rgb(241, 234, 234);
+        transition: linear 0.5s;
+    }
+    
+}
+
+@media (min-width: 1200px){
+    .container, .container-lg, .container-md, .container-sm, .container-xl {
+        max-width: 1500px;
+    }
+}
+@media (max-width:1100px){
+    .container-vid{
+        height: auto;
+        overflow: hidden;
+    }
+    .navItems .mainItems li {
+        padding: 5px 6px;
+        margin: 25px 0px;
+    }
+    .container, .container-lg, .container-md, .container-sm {
+        max-width: 1000px;
+    }
+    .btns button{
+        padding: 5px 5px;
+    }
+    .dropdownMenu li {
+        padding: 3px 11px !important;
+        margin: 2px 0px !important;
+    }
+    .landingParagraph h1{
+        font-size: 24px;
+    }
+    .landingParagraph{
+        top: 80%;
+    }
+    .country-card{
+        height: 475px;
+    }
+}
+@media (max-width:960px){
+    .header{
+        top: 78px;
+    }
+    .navItems .mainItems li {
+        padding: 5px 6px;
+        margin: 25px 0px;
+    }
+    .navItems .mainItems li a{
+        font-size: 14px;
+    }
+    .btns button a{
+        font-size: 14px;
+    }
+    .landingParagraph{
+        top: 85%;
+    }
+    .country-card{
+        height: 510px;
+    }
+}
+@media(max-width:768px){
+    .navItems{
+        display: none;
+    }
+    .subHead p{
+        font-size: 14px;
+    }
+    .header{
+        top: 93px;
+    }
+    .hidden-items{
+        display: block;
+    }
+    .hidden-items a{
+        color: #f5d356 !important;
+    }
+    .bar{
+        display: block;
+        color: white;
+        margin: 20px 10px;
+    }
+    .container-vid{
+        height: 100vh;
+    }
+    .logo img {
+        width: 175px;
+        align-items: center;
+        margin: 20px 0px;
+    }
+    .btns{
+        display: none;
+    }
+    .landingParagraph{
+        top: 70%;
+        width: 80%;
+        margin: 0px auto;
+    }
+    .landingParagraph h1{
+        font-size: 26px;
+    }
+    .container-img img{
+        width: 200%;
+    }
+    .about p{
+        font-size: 24px;
+    }
+    th{
+        display: none;
+    }
+    td{
+        display: block;
+        width: 100%;
+        padding-left: 10px;
+    }
+    .firstOfTable{
+        border-top: #d2d2d3  solid 1px;
+    }
+    .country::before{
+        content: "N.Country";
+        border-top: 1px solid #d2d2d3;
+        border-bottom: 1px solid #d2d2d3;
+        padding: 22px 0px;
+        padding-right: 40px;
+        padding-left: 10px;
+    }
+    .tours-count::before{
+        content: "Tours";
+        padding-right: 40px;
+
+        padding-left: 10px;
+    }
+    .cities::before{
+        content: "Cities";
+        padding: 22px 0px;
+        padding-right: 40px;
+        padding-left: 10px;
+    }
+    .airplane::before{
+        padding: 22px 0px;
+        content: "Airplane";
+        display: block;
+        width: 30%;
+        padding-right: 40px;
+        padding-left: 10px;
+    }
+    .hotels::before{
+        content: "Hotels";
+        padding: 22px 0px;
+        padding-right: 40px;
+        padding-left: 10px;
+    }
+    .prices::before{
+        content: "Prices";
+        padding: 22px 0px;
+        padding-right: 40px;
+        padding-left: 10px;
+    }
+    .first-item{
+        background-color: #d2d2d38e;
+    }
+    
+    
+
+}
+@media (max-width:640px) {
+    .country-card{
+        height: 475px;
+    }
+    
+}
+@media (max-width:405) {
+    .coountry-card{
+        height: 640px;
+    }
+    
+}
+@media (max-height:365px) {
+    .country-card{
+        height: 600px;
+    }
+}
+@media (max-height:313px) {
+    .country-card{
+        height: 600px;
+    }
+    
+}
+@media(max-height:235px){
+    .landingParagraph{
+        top: 70%;
+    }
+    .landingParagraph h1{
+        font-size: 18px;
+    }
+    .landingParagraph p{
+        font-size: 14px
+    }
+    .subHead p{
+        font-size: 10px;
+    }
+    .header{
+        top: 60px;
+    }
+    .country-card{
+        height: 540px;
+    }
+}
+@media(max-height:188px){
+
+    .landingParagraph h1{
+        font-size: 10px;
+    }
+    .landingParagraph p{
+        font-size: 8px;
+    }
+    .landingParagraph{
+        top: 80%;
+    }
+    .country-card{
+        height: 505px;
+    }
+
+}
